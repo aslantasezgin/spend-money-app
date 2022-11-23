@@ -1,11 +1,12 @@
 import React from "react";
 
 
-const Header = ({money}) => {
+const Header = ({money,total}) => {
     return(
         <>
         <div>
-        Harcamak için {money} dolar paranız var.
+        <p> Harcanan Tutar : {total} </p>
+        Harcamak için {money-total} dolar paranız var.
         </div>
         </>
     )
